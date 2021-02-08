@@ -3,7 +3,7 @@ from flask import Flask,jsonify,request,redirect
 
 app=Flask(__name__)
 
-songs=[{'name':'e','writer':'s'},{'name': 'o',"writer":"e"}]
+songs=[{'name':'e','writer':'s'},{'name': 'o',"writer":"e"},{'name':'r','writer':'q'}]
 @app.route("/songs",methods=["GET","POST"])
 def get_songs():
     if request.method=="GET":
